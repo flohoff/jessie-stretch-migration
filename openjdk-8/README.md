@@ -17,7 +17,7 @@ Stage 1
 ========
 
 	sbuild \
-		--setup-hook="mv /bin/uname /bin/uname.real ; wget https://github.com/flohoff/jessis-stretch-transition/openjdk-8/uname.fake.kernel2.6 -O /bin/uname ; chmod 0755 /bin/uname" \
+		--setup-hook="mv /bin/uname /bin/uname.real ; wget https://raw.githubusercontent.com/flohoff/jessie-stretch-migration/main/openjdk-8/uname.fake.kernel2.6 -O /bin/uname ; chmod 0755 /bin/uname" \
 		--resolve-alternatives \
 		--extra-repository='deb-src [trusted=yes] http://snapshot.debian.org/archive/debian/20170424T033346Z sid main' \
 		openjdk-8_8u121-b13-4.1
