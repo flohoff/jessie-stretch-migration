@@ -1,0 +1,5 @@
+#!/bin/bash
+
+KERNVER=$(/bin/uname.real -r)
+
+/bin/uname.real $* | sed -e "s/$KERNVER/2.6.0/g"
